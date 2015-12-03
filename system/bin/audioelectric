@@ -1,0 +1,8 @@
+# Script to start "am" on the device, which has a very rudimentary
+# shell.
+#
+echo "...............runing..........."
+base=/system
+export CLASSPATH=$base/framework/audioelectric.jar
+exec app_process $base/bin com.yulong.audioelectric.AudioElectricMain "$@"
+
